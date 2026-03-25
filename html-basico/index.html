@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/Gartoon-Team-Gartoon-Misc-Stock-Book-Red.512.png" type="image/x-icon">
+    <style>
+        table{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        caption{
+            background-color: black;
+            color: white;
+        }
+        thead{
+            background-color: lightsalmon;
+        }
+    </style>
     <title>Estudos de HTML</title>
 </head>
 <body>
@@ -62,8 +77,8 @@
     <h2>Utilizando Imagens em HTML</h2>
     <p>Para adicionar imagens em nossa página web, utiliza-se a tag &lt;img&gt;. A estrutura padrão da tag é:</p>
     <p>&lt;img src="" alt=""&gt;</p>
-    <p>Onde em "src" você coloca o caminho para o diretório ou URL da imagem, e "alt" representa uma alternativa caso a imagem não carregue corretamente.</p>
-    <p>É possível utilizar um style para alterar o tamanho (altura e largura) da imagem, ou usar os atributos <em>width</em> e <em>height</em> diretamente.</p>
+    <p>Onde no atributo <strong>src</strong> você coloca o caminho para o diretório ou URL da imagem, e o atributo <strong>alt</strong> representa uma alternativa caso a imagem não carregue corretamente.</p>
+    <p>É possível utilizar um style para alterar o tamanho (altura e largura) da imagem, ou usar os atributos <strong>width</strong> e <strong>height</strong> diretamente.</p>
     <img src="assets/luffy.jpg" alt="Imagem do Luffy">
     <hr>
 
@@ -71,11 +86,122 @@
     <p>Um link é responsável por te levar a uma outra página do site. Para adicionar um link, utiliza-se a tag &lt;a&gt;:</p>
     <p>&lt;a href=""&gt;...&lt;/a&gt;</p>
     <p>Onde o atributo href é responsável pelo link. Se for uma referência a um site externo, você precisa colocar o endereço completo (URL).</p>
-    <p>Para que o link seja aberto em uma nova guia do navegador, é preciso adicionar o atributo target="_blank".</p>
+    <p>Para que o link seja aberto em uma nova guia do navegador, é preciso adicionar o atributo <strong>target="_blank"</strong>.</p>
     <p>Por exemplo, este <a href="https://github.com/GSOliveira1" target="_blank" rel="noopener noreferrer">link</a> te manda para o meu perfil no GitHub, onde você poderá ver todos os meus repositórios e trajetória nos estudos!</p>
     <hr>
 
     <h2>Tabelas em HTML</h2>
+    <p>Para criar tabelas em HTML, utilizamos as seguintes tags:</p>
+    <p>&lt;table&gt; é a tag responsável pela tabela.</p>
+    <p>&lt;tr&gt; é a tag responsável por criar uma linha na tabela.</p>
+    <p>&lt;td&gt; é a tag responsável por colocar dados na tabela</p>
+    <p>&lt;th&gt; é a tag responsável pelo cabeçalho da tabela.</p>
+    <table>
+        <tr>
+            <th>Tecnologias</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>JavaScript</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Python</td>
+            <td>PHP</td>
+        </tr>
+        <tr>
+            <td>Spring</td>
+            <td>Django</td>
+            <td>Laravel</td>
+        </tr>
+    </table>
+    <p>Para definir e mostrar a borda de uma tabela, precisamos utilizar CSS para personalizar essa borda.</p>
+    <p>Podemos utilizar os atributos <strong>colspan</strong> e <strong>rowspan</strong> para modificar a extensão de colunas e linhas.</p>
+    <p>Demais tags úteis ao trabalhar com tabelas. Elas são úteis especialmente quando for trabalhar com CSS para formatação da tabela. Segue abaixo as tags:</p>
+    <ul>
+        <li>caption: Legenda/título da tabela</li>
+        <li>theader: Cabeçalho da tabela</li>
+        <li>tbody: Corpo da tabela</li>
+        <li>tfoot: Rodapé da tabela</li>
+    </ul>
+    <p>Exemplo: lista de animes</p>
+    <table>
+        <caption>Lista de Animes</caption>
+        <thead>
+            <tr>
+                <th>Anime</th>
+                <th>Episódios</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>One Piece</td>
+                <td>1167</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>JJK</td>
+                <td>59</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td>SAO</td>
+                <td>102</td>
+                <td>10.0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Exemplo: tabela de países com maior população do mundo</p>
+    <table>
+        <caption>Lista de países mais populosos</caption>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>País</th>
+                <th>População aproximada (milhões)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>China</td>
+                <td>1.440</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>India</td>
+                <td>1.380</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Estados Unidos</td>
+                <td>331</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Indonésia</td>
+                <td>273</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paquistão</td>
+                <td>220</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Brasil</td>
+                <td>212</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">fonte: ficticio.com.br</td>
+            </tr>
+        </tfoot>
+    </table>
     <hr>
 
     <h2>Formulários HTML</h2>
