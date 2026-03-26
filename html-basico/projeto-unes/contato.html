@@ -17,6 +17,13 @@
             font-size: 24px;
             margin-left: 20px;
         }
+        input, textarea{
+            margin-bottom: 20px;
+        }
+        #footerText{
+            font-size: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -30,5 +37,24 @@
             <a href="contato.html">Contato</a>
         </div>
     </div>
+    <div>
+        <h1>Entre em contato</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sit iusto laboriosam nisi expedita laudantium, rerum, vel praesentium molestias dignissimos distinctio maiores eveniet ipsam quos eligendi! Ullam porro iure explicabo.</p>
+    </div>
+    <hr>
+    <div>
+        <form>
+            <label for="email">Seu e-mail:</label><br>
+            <input type="email" name="email" id="email"><br>
+            <label for="assunto">Assunto:</label><br>
+            <input type="text" name="assunto" id="assunto"><br>
+            Descrição: <br>
+            <textarea name="descricao" id="descricao"></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <p id="footerText"><strong>Todos os direitos reservados</strong></p>
+    </footer>
 </body>
 </html>

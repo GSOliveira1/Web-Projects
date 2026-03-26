@@ -296,5 +296,53 @@
         <input type="submit" value="Cadastrar">
     </form>
     <hr>
+
+    <h2>Mídias em HTML: Vídeos, Áudio</h2>
+    <h3>Vídeos</h3>
+    <p>Para executar vídeos em sua página web, utiliza-se a tag &lt;video&gt;</p>
+    <p>Os formatos de vídeos aceitos e mais comuns são: <strong>MP4</strong>, <strong>WebM</strong>, <strong>Ogg</strong>. O formato mais recomendado é o <strong>MP4</strong>.</p>
+    <video controls autoplay muted width="600px">
+        <source src="assets/anime.mp4" type="video/mp4">
+    </video>
+    <p>Temos alguns atributos que ajudam na execução de vídeos:</p>
+    <ul>
+        <li>controls: adiciona controles de vídeos, como play, pause e volume.</li>
+        <li>width: largura do vídeo</li>
+        <li>height: altura do vídeo</li>
+        <li>autoplay: inicia o vídeo automaticamente.</li>
+        <li>muted: adiciona muted após <strong>autoplay</strong> para seu vídeo iniciar automaticamente, porém silenciado.</li>
+        <li>loop: coloca o vídeo em repetição.</li>
+    </ul>
+    <h3>Áudio</h3>
+    <p>Para executar áudios em sua página web, utiliza-se a tag &lt;audio&gt;</p>
+    <p>Os formatos de áudios aceitos e mais comuns são: <strong>MP3</strong>, <strong>WAV</strong> e <strong>OGG</strong>. O formato mais recomendado é o <strong>MP3</strong>.</p>
+    <audio controls autoplay muted>
+        <source src="assets/chill.mp3" type="audio/mp3">
+    </audio>
+    <p>Temos alguns atributos que ajudam na execução de áudios:</p>
+    <ul>
+        <li>controls: adiciona controles de áudio, como play, pause e volume.</li>
+        <li>autoplay: inicia o áudio automaticamente.</li>
+        <li>muted: adiciona muted após <strong>autoplay</strong> para seu áudio iniciar automaticamente, porém silenciado.</li>
+        <li>loop: coloca o áudio em repetição.</li>
+    </ul>
+    <h3>YouTube</h3>
+    <p>A maneira mais fácil de reproduzir vídeos em sua página web é usando o Youtube. Para reproduzir um vídeo do YouTube em sua página web, faça:</p>
+    <ol>
+        <li>Faça upload do vídeo para o YouTube</li>
+        <li>Anote o ID do vídeo</li>
+        <li>Defina um elemento &lt;iframe&gt; na sua página web</li>
+        <li>Aponte o atributo <strong>src</strong> para o URL do vídeo</li>
+        <li>Use os atributos <strong>width</strong> e <strong>height</strong> para especificar as dimensões do reprodutor</li>
+        <li>Adicione outros parâmetros a URL, como:
+            <ul>
+                <li>mute=1</li>
+                <li>autoplay=1</li>
+                <li>playlist=videoID e loop=1</li>
+            </ul>
+        </li>
+    </ol>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-WY5BmznSG8?si=SUdvI5SWz02wh6VO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
 </body>
 </html>
