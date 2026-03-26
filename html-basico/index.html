@@ -17,6 +17,12 @@
         }
         thead{
             background-color: lightsalmon;
+        }       
+        p, a, li{
+            font-size: 20px;
+        }
+        label, input, select, textarea{
+            margin-bottom: 20px;
         }
     </style>
     <title>Estudos de HTML</title>
@@ -205,6 +211,62 @@
     <hr>
 
     <h2>Formulários HTML</h2>
+    <p>Formulários em HTML permitem que um usuário insira dados que são enviados a um servidor para processamento.</p>
+    <p>Para criar um formulário HTML, utiliza-se a tag &lt;form&gt;...&lt;/form&gt;</p>
+    <p>Um formulário é composto por componentes: &lt;input type="" name=""&gt;. Os componentes principais e mais utilizados são:</p>
+    <ul>
+        <li>&lt;input type="text" name="text"&gt;: caixa de texto com linha única</li>
+        <li>&lt;input type="password" name="senha"&gt;: caixa de senha</li>
+        <li>&lt;input type="button" value="botao"&gt;: botão</li>
+        <li>&lt;input type="submit" value="botao"&gt;: botão de enviar</li>
+        <li>&lt;input type="radio" value="botao"&gt;: botão tipo radio, apenas uma opção pode ser selecionada</li>
+        <li>&lt;input type="checkbox" value="botao"&gt;: caixa de selação</li>
+        <li>&lt;textarea&gt;: caixa de texto que permite que você digite mais coisas</li>
+        <li>&lt;fieldset&gt;: permite que você agrupe campos</li>
+        <li>&lt;legend&gt;: permite que você adicione legenda para um conjunto de campos(fieldset)</li>
+    </ul>
+    <p>O atributo <strong>name</strong> serve para permitir enviar os dados digitados para outra página, para autenticação, entre outros.</p>
+    <p>Podemos fazer a validação dos dados digitados por meio de uma linguagem de programação, como o JavaScript e o PHP.</p>
+    <p>Funcionamento de um formulário:</p>
+    <ol>
+        <li>O usuário preenche o formulário com as informações requisitadas.</li>
+        <li>O nome de cada elemento de formulário é enviado ao servidor, juntamente com os valores preenchidos.</li>
+        <li>O servidor processa as informações usando uma linguagem de programação como PHP, JavaScript, C#, entre outras. Também é possível armazenar os dados em um banco de dados.</li>
+        <li>O servidor processa e envia uma nova página para o navegador com base nas informações recebidas. </li>
+    </ol>
+    <p>Dois atributos importantes ao mexer com formulários são:</p>
+    <ul>
+        <li><strong>action</strong>: define qual o destino dos dados. Onde eles serão processados.</li>
+        <li><strong>method</strong>: GET ou POST. POST envia os dados de forma escondida.</li>
+    </ul>
+    <p>Exemplo de formulário</p>
+    <form action="">
+        <label for="usuario">Usuario</label><br>
+        <input type="text" name="usuario" id="usuario" placeholder="usuario"><br>
+        <label for="senha">Senha</label><br>
+        <input type="password" name="senha" id="senha" placeholder="*******"><br>
+        <label for="genero">Gênero</label><br>
+        <input type="radio" name="genero" id="genero" value="feminino">Feminino
+        <input type="radio" name="genero" id="genero" value="masculino">Masculino<br>
+        <label for="stack">Tecnologias</label><br>
+        <input type="checkbox" name="stack" id="stack">HTML <br>
+        <input type="checkbox" name="stack" id="stack">CSS <br>
+        <input type="checkbox" name="stack" id="stack">JS <br>
+        <input type="checkbox" name="stack" id="stack">React <br>
+        <input type="checkbox" name="stack" id="stack">Node.js <br>
+        Estado: <br>
+        <select name="estado" id="estado">
+            <option value="">Selecione</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+        </select><br>
+        Currículo: <br>
+        <input type="file" name="curriculo" id="curricolo"><br>
+        <textarea name="comentario" id="comentario" placeholder="Digite um comentário."></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
     <hr>
 </body>
 </html>
