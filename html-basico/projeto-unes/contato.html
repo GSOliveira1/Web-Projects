@@ -6,19 +6,27 @@
     <title>UNES - Contato</title>
     <style>
         body{
-            background-image: url(../assets/projeto-unes/fundo2.png)
+            background-image: url(../assets/projeto-unes/fundo2.png);
         }
         .container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: flex; /*Alinha os itens horizontalmente*/
+            justify-content: space-between; /*Posiciona o primeiro filho totalmente a esquerda e o segundo totalmente a direita*/
+            align-items: center; /*Alinha verticalmente*/
+            margin-top: 32px;
         }
         a{
             font-size: 24px;
-            margin-left: 20px;
+            margin-right: 20px;
+            text-decoration: none; /*Remove a linha que fica embaixo do link*/
+        }
+        p, label{
+            font-size: 20px;
         }
         input, textarea{
             margin-bottom: 20px;
+        }
+        #submitButton{
+            width: 100px;
         }
         #footerText{
             font-size: 20px;
@@ -50,7 +58,7 @@
             <input type="text" name="assunto" id="assunto"><br>
             Descrição: <br>
             <textarea name="descricao" id="descricao"></textarea><br>
-            <button type="submit">Enviar</button>
+            <button type="submit" id="submitButton">Enviar</button>
         </form>
     </div>
     <footer>

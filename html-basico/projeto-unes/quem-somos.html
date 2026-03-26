@@ -9,16 +9,18 @@
             background-image: url(../assets/projeto-unes/fundo2.png);
         }
         .container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: flex; /*Posiciona os filhos de container em linha horizontalmente*/
+            justify-content: space-between; /*Posiciona o primeiro filho totalmente a esquerda e o segundo filho totalmente a direita*/
+            align-items: center; /*Alinha verticalmente*/
+            margin-top: 32px;
         }
         .conteudo{
             margin: 32px;
         }
         a{
             font-size: 24px;
-            margin-left: 20px;
+            margin-right: 20px;
+            text-decoration: none; /*Remove a linha embaixo do link*/
         }
         p, li{
             font-size: 20px;
@@ -32,7 +34,7 @@
 <body>
     <div class="container">
         <div>
-            <img src="../assets/projeto-unes/logo.png" alt="logo" height="100px">
+            <img src="../assets/projeto-unes/logo.png" alt="logo">
         </div>
         <div>
             <a href="index.html">Home</a>
