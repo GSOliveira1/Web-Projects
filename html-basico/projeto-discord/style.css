@@ -1,0 +1,25 @@
+body{
+    background-color: lightgray;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+#navBarLink{
+    margin-right: 20px;
+}
+
+a{
+    font-size: 20px;
+}
+
+#loginButton{
+    margin-right: 20px;
+}
