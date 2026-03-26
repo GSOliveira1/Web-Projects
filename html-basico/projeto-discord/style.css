@@ -3,9 +3,9 @@ body{
 }
 
 .navBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;  /*Posiciona os filhos em linha horizontalmente*/
+    justify-content: space-between; /*Posiciona o primeiro filho totalmente à esquerda e o segundo filho totalmente à direita*/
+    align-items: center; /*Alinha verticalmente*/
 }
 
 p{
