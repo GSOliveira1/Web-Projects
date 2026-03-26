@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <title>Estudos de CSS</title>
+    <style>
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+        }
+        p, li{
+            font-size: 20px;
+        }
+        #strong-orange{
+            color: orange;
+        }
+        #strong-green{
+            color: rgb(61, 139, 61);
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>CSS - Cascating Style Sheet</h1>
+    </div>
+    <div class="conteudo">
+        <h2>O que é o CSS?</h2>
+        <p>O CSS é o responsável pela estilização da página web. Você pode fazer diversas coisas com o CSS, como formatar botões, mudar a cor de fundo da página, cor de fonte, posicionamento de elementos, etc.</p>
+        <hr>
+
+        <h2>Conceitos Importantes</h2>
+        <p>Todos os elementos HTML, quando você for aplicar uma formatação utilizando CSS, pense neles como uma caixa.</p>
+        <p>Formatações que podemos utilizar:</p>
+        <p>Caixas:</p>
+        <ul>
+            <li>Largura e altura</li>
+            <li>Bordas (cor, espessura e estilo)</li>
+            <li>Cores e imagens de fundo</li>
+            <li>Posição na janela do navegador</li>
+        </ul>
+        <p>Texto:</p>
+        <ul>
+            <li>Fonte</li>
+            <li>Tamanho</li>
+            <li>Cor</li>
+            <li>Itálico, negrito, maiúscula</li>
+        </ul>
+        <p>A CSS funciona associando regras aos elementos HTML. Essas regras determinam como o conteúdo dos elementos especificados deve ser exibido.</p>
+        <p>Uma regra CSS contém duas partes: um <strong id="strong-orange">seletor</strong> e uma <strong id="strong-green">declaração</strong>. O seletor indica qual elemento será formatado, e a declaração aplica a formatação. Exemplo:</p>
+        <p>p{color: red;}</p>
+        <hr>
+
+        <h2>Como aplicar CSS?</h2>
+        <p>Existem três formas de aplicar CSS em sua página web: inline, interna e externa.</p>
+        <ul>
+            <li>Inline: aplicado diretamente no elemento que você deseja formatar. Usado geralmente quando você deseja fazer uma formatação específica <strong>apenas</strong> naquele elemento.</li>
+            <li>Internal: dentro de um &lt;style&gt;...&lt;/style&gt; declarado na &lt;head&gt; da sua página</li>
+            <li>External: em um arquivo separado, de formato.css. Para que a formatação seja aplicado, é necessário fazer um link na &lt;head&gt; para o arquivo contendo a estilização da página.</li>
+        </ul>
+    </div>
+</body>
+</html>
