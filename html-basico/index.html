@@ -267,6 +267,34 @@
         <textarea name="comentario" id="comentario" placeholder="Digite um comentário."></textarea><br>
         <input type="submit" value="Enviar">
     </form>
+
+    <p>Para caixas de texto, temos três atributos opcionais: <strong>size</strong>, <strong>maxlenght</strong> e <strong>value</strong>:</p>
+    <ul>
+        <li>size: especifica o tamanho da caixa de texto em caracteres</li>
+        <li>maxlenght: especifica o número máximo de caracteres que o usuário pode digitar.</li>
+        <li>value: define qual texto, se tiver, deve ser apresentado na caixa quando ela é mostrada inicialmente na tela.</li>
+    </ul>
+    <p>Exercício de formulário:</p>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome"><br>
+            <label for="email">Email</label><br>
+            <input type="text" name="email" id="email" placeholder="seuemail@email.com"><br>
+            <input type="checkbox" name="receberEmail" id="receberEmail" value=>Quero receber email<br>
+            <label for="senha">Senha</label><br>
+            <input type="password" name="senha" id="senha">
+        </fieldset>
+        <fieldset>
+            <legend>Informações adicionais</legend>
+            <label for="pfisica">Pessoa Física</label>
+            <input type="radio" name="pessoa" id="pfisica">
+            <label for="pjuridica">Pessoa Jurídica</label>
+            <input type="radio" name="pessoa" id="pjuridica"><br>
+        </fieldset>
+        <input type="submit" value="Cadastrar">
+    </form>
     <hr>
 </body>
 </html>
