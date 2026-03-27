@@ -1,5 +1,10 @@
+body{
+    background-color: black;
+    color: white;
+}
+
 div{
-    border: 1px solid red;
+    border: 1px solid black;
     margin-bottom: 10px;
 }
 
@@ -23,4 +28,29 @@ p, li{
 }
 #strong-green{
     color: rgb(61, 139, 61);
+}
+
+.fontes{
+    display: flex;  /*Alinha os itens em linha horizontalmente*/
+    justify-content: space-between; /*Adiciona espaço entre os filhos da div fontes*/
+}
+
+.fontes-filha{
+    width: 19%;
+}
+
+.fontes-conteudo{
+    height: 50%;
+}
+
+.fontes-exemplos{
+    height: 50%;
+}
+
+.p-exemplos{
+    color: rgb(86, 90, 97);
+}
+
+.fonte-nome{
+    color: rgb(172, 161, 10);
 }
