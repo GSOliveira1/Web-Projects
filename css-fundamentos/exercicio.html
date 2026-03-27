@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Div e Span</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container a{
+            padding-right: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .conteudo{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .conteudo-imagens{
+            display: flex;
+        }
+
+        .conteudo p{
+            font-size: large;
+        }
+
+        .conteudo span{
+            font-size: large;
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="../html-basico/assets/exercicio-pilotos/logo.png" alt="logo">
+        </div>
+        <div>
+            <a href="">Recente</a>
+            <a href="">Vídeo</a>
+            <a href="">Agenda de corridas</a>
+            <a href="">Pilotos</a>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <div class="conteudo-texto">
+            <h1>Grandes Pilotos da Fórmula 1</h1>
+            <p>Alguns dos <span>grandes pilotos</span> de todos os tempos da Fórmula 1.</p>
+        </div>
+        <div class="conteudo-imagens">
+            <div>
+                <figure>
+                    <img src="../html-basico/assets/exercicio-pilotos/p1.jpeg" alt="Lewis Hamilton">
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="../html-basico/assets/exercicio-pilotos/p2.jpeg" alt="">
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

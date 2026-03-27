@@ -1,0 +1,44 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(26, 101, 241);
+}
+
+.navbarItem{
+    color: white;
+    font-size: 20px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+.navbarItem:hover{  /*Hover: quando passa o mouse em cima*/
+    color: grey;
+}
+
+.navbarSpan{
+    padding-right: 30px;
+    font-size: 20px;
+    background-color: white;
+    color: rgb(26, 101, 241);    
+}
+
+.banner{
+    background-color: blueviolet;
+}
+
+footer{
+    background-color: rgb(26, 101, 241);
+}
+
+footer span{
+    font-size: 20px;
+}
+
+#magalu{
+    color: rgb(80, 81, 90);
+}
+
+#direitos{
+    color: white;    
+}

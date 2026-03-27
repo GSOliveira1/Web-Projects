@@ -1,0 +1,26 @@
+div{
+    border: 1px solid red;
+    margin-bottom: 10px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    border: 1px solid black;
+}
+
+.conteudo{
+    padding-left: 32px;
+}
+
+p, li{
+    font-size: 20px;
+}
+#strong-orange{
+    color: orange;
+}
+#strong-green{
+    color: rgb(61, 139, 61);
+}
