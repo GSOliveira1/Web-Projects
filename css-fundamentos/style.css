@@ -22,6 +22,7 @@ h2{
 
 #conteudo{
     padding-left: 32px;
+    padding-right: 32px;
 }
 
 p, li{
@@ -36,7 +37,7 @@ p, li{
     color: rgb(61, 139, 61);
 }
 
-.fontes{
+#fontes{
     display: flex;  /*Alinha os itens em linha horizontalmente*/
     justify-content: space-between; /*Adiciona espaço entre os filhos da div fontes*/
 }
@@ -79,4 +80,12 @@ p, li{
 
 #fantasia{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#medidas{
+    display: flex;  /*Alinha os itens em linha, horizontalmente*/
+}
+
+.tipos-medidas{
+    width: 50%;
 }
