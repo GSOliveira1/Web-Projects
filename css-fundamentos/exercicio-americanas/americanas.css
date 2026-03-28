@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+h1{
+    background: white;
+    text-align: center;
+}
+
+#navbar{
+    background: #d80032;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.navbarItem{
+    padding-right: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbarItem:hover{  /*Muda a cor do link quando passa o mouse por cima*/
+    color: #2b2d42;
+}
+
+#banner{
+    background: #8d99ae;
+}
+
+#produtos img{
+    display: block; /*Transforma a imagem em elemento de bloco*/
+    margin: auto;   /*Posiciona a imagem no meio da div*/
+}
+
+#firstProduct{
+    background: #ef233c;
+}
+
+#secondProduct{
+    background: #2b2d42;
+}
+
+#thirdProduct{
+    background: #edf2f4;
+}
+
+.celularGroup1{
+    background: #edf2f4;
+}
