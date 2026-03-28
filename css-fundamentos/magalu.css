@@ -27,6 +27,18 @@
     background-color: blueviolet;
 }
 
+.produtos{
+    padding-left: 100px;
+}
+
+.destaques{
+    padding-left: 100px;
+}
+
+.destaques p{
+    font-size: 20px;
+}
+
 footer{
     background-color: rgb(26, 101, 241);
 }

@@ -1,6 +1,7 @@
 body{
     background-color: #091413;
     color: #B0E4CC;
+    margin: 0;
 }
 
 div{
@@ -16,6 +17,7 @@ h2{
     justify-content: center;
     align-items: center;
     background-color: #408A71;
+    border: 2px solid #215241;
 }
 
 .conteudo{
@@ -25,9 +27,11 @@ h2{
 p, li{
     font-size: 20px;
 }
+
 #strong-orange{
     color: orange;
 }
+
 #strong-green{
     color: rgb(61, 139, 61);
 }
@@ -55,4 +59,24 @@ p, li{
 
 .fonte-nome{
     color: #A0D585;
+}
+
+#serifa{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#sem-serifa{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#monoespacada{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#cursiva{
+    font-family: cursive;
+}
+
+#fantasia{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
