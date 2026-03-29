@@ -89,3 +89,9 @@ p, li{
 .tipos-medidas{
     width: 50%;
 }
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
