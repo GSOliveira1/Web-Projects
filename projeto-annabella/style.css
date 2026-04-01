@@ -1,18 +1,27 @@
 body{
     background-image: url(images/fundo.png);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main{
+    width: 900px;
 }
 
 #navbar{
     background-color: #7B7A6F;
-    width: 850px;
-    padding: 10px 25px;
+    padding: 25px;
 }
 
 a{
+    color: #4b566a;
     text-transform: uppercase;
     font-size: 1.2em;
     padding-left: 5px;
     text-decoration: none;
+}
+
+a:active{
+    color: #343f53;
 }
 
 #content{
