@@ -1,0 +1,35 @@
+body{
+    background-image: url(images/fundo.png);
+}
+
+#navbar{
+    background-color: #7B7A6F;
+    width: 850px;
+    padding: 10px 25px;
+}
+
+a{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+#content{
+    background-color: #E4E3D4;
+    width: 895px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+h2{
+    color: #99988c;
+}
+
+#footer{
+    width: 900px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
