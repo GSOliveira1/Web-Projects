@@ -29,11 +29,11 @@ p, li{
     font-size: 20px;
 }
 
-#strong-orange{
+.strong-orange{
     color: orange;
 }
 
-#strong-green{
+.strong-green{
     color: rgb(61, 139, 61);
 }
 
@@ -94,4 +94,10 @@ h2{
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: center;
+}
+
+#pseudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

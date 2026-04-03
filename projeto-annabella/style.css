@@ -36,9 +36,5 @@ h2{
 }
 
 #footer{
-    width: 900px;
-    padding-top: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }

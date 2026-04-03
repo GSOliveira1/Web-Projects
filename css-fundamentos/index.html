@@ -34,7 +34,7 @@
             <li>Itálico, negrito, maiúscula</li>
         </ul>
         <p>A CSS funciona associando regras aos elementos HTML. Essas regras determinam como o conteúdo dos elementos especificados deve ser exibido.</p>
-        <p>Uma regra CSS contém duas partes: um <strong id="strong-orange">seletor</strong> e uma <strong id="strong-green">declaração</strong>. O seletor indica qual elemento será formatado, e a declaração aplica a formatação.</p>
+        <p>Uma regra CSS contém duas partes: um <strong class="strong-orange">seletor</strong> e uma <strong class="strong-green">declaração</strong>. O seletor indica qual elemento será formatado, e a declaração aplica a formatação.</p>
         <p>Exemplo:</p>
         <p>p{color: red;}</p>
         <hr>
@@ -147,7 +147,7 @@
         <p>Cada caixa tem uma borda, mesmo que não esteja visível.</p>
         <p>Padding: padding/preenchimento é o espaçamento entre a borda de uma coisa e qualquer coisa que esteja dentro dela.</p>
         <p>Margin: contornam e delimitam as extremidades, criando espaços entre elementos diferentes.</p>
-        <p>Podemos colocar bordas, margin e padding em direções específicas: top, right, bottom, left <strong id="strong-orange">(EXATAMENTE NESSA ORDEM).</strong></p>
+        <p>Podemos colocar bordas, margin e padding em direções específicas: top, right, bottom, left <strong class="strong-orange">(EXATAMENTE NESSA ORDEM).</strong></p>
         <hr>
 
         <h2>Bordas</h2>
@@ -158,7 +158,7 @@
             <li>Estilo de borda: border-style</li>
         </ul>
         <p>É possível arredondar bordas utilizando o <strong>border-radius</strong>.</p>
-        <p>Podemos formatar definindo: 4 valores <strong id="strong-green">(top, right, bottom, left)</strong>, 2 valores <strong id="strong-green">(top/bottom, right/left)</strong> e 1 valor <strong id="strong-green">(aplica para todos os lados)</strong>.</p>
+        <p>Podemos formatar definindo: 4 valores <strong class="strong-green">(top, right, bottom, left)</strong>, 2 valores <strong class="strong-green">(top/bottom, right/left)</strong> e 1 valor <strong class="strong-green">(aplica para todos os lados)</strong>.</p>
         <hr>
 
         <h2>Classes e IDs</h2>
@@ -180,7 +180,7 @@
                     <li>cm -> centímetros</li>
                     <li>mm -> milímetros</li>
                     <li>in -> polegadas</li>
-                    <li>px -> pixel. <strong id="strong-orange">MAIS USADA</strong></li>
+                    <li>px -> pixel. <strong class="strong-orange">MAIS USADA</strong></li>
                     <li>pt -> ponto</li>
                     <li>pc - paica</li>
                 </ul>
@@ -191,8 +191,8 @@
                     <li>em -> relativo ao tamanho da fonte do pai</li>
                     <li>rem -> relativo ao tamanho do elemento raiz</li>
                     <li>% -> relativo ao tamanho do elemento pai. 100% é a largura do elemento parente</li>
-                    <li>vw -> relativo a largura <strong id="strong-green">total</strong> da tela</li>
-                    <li>vh -> relativo a altura <strong id="strong-green">total</strong> da tela</li>
+                    <li>vw -> relativo a largura <strong class="strong-green">total</strong> da tela</li>
+                    <li>vh -> relativo a altura <strong class="strong-green">total</strong> da tela</li>
                 </ul>
             </div>
         </div>
@@ -244,6 +244,61 @@
         <hr>
 
         <h2>Mais sobre Seletores</h2>
+        <ul>
+            <li>Seletor universal: <strong class="green">*{...}</strong> -> aplica em todos os elementos da página</li>
+            <li>Seletor de filho: <strong class="orange">elemento>filho{...}</strong> -> seleciona o primeiro elemento que é filho do outro.</li>
+            <li>Seletor de descendente: <strong>elemento1 elemento2{...}</strong> -> seleciona um elemento que é descendente de outro elemento especificado.</li>
+            <li>Seletor de irmão: <strong>elemento1 + elemento2{...}</strong> -> seleciona o primeiro elemento2 após qualquer elemento1.</li>
+        </ul>
+        <hr>
+
+        <h2>Pseudo-classes e pseudo-elementos</h2>
+        <p>Pseudo-classes: é uma palavra-chave adicionada a seletores, que permite que você estilize uma parte específica do elemento selecionado.</p>
+        <div id="pseudo">
+            <div class="pseudo-exemplo">
+                <h3>Links</h3>
+                <ul>
+                    <li>a:hover -> passar o cursor sobre o link</li>
+                    <li>a:visited -> links visitados</li>
+                    <li>a:links -> links não visitados</li>
+                    <li>a:active -> quando você clica no link</li>
+                </ul>
+            </div>
+            <div class="pseudo-exemplo">
+                <h3>Forms</h3>
+                <ul>
+                    <li>input:checked -> quando você marca a opção</li>
+                    <li>input:focus -> quando você seleciona uma caixa de texto</li>
+                    <li>input:required -> para input com atributo required</li>
+                </ul>
+            </div>
+            <div class="pseudo-elementos">
+                <h3>Textos</h3>
+                <ul>
+                    <li>p::first-line -> primeira linha</li>
+                    <li>p::first-letter -> primeira letra</li>
+                    <li>p::selection -> quando você seleciona o texto</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <h2>Herança e Especificidade</h2>
+        <p>Os elementos irão herdar formatações dos seus elementos pais. Porém, algumas formatações, como background e border, não são herdadas.</p>
+        <p>Especificidade: é a maneira de como os navegadores definem quais valores de propriedades são os mais relevantes para o elemento a ser utilizado. Especificidade é baseada apenas nas regras impostas na composição de diferentes tipos de seletores.</p>
+        <p>Ordem de aplicação de formatação:</p>
+        <ol>
+            <li>Regras com !important</li>
+            <li>Seletores mais específicos</li>
+            <li>Última regra processada</li>
+        </ol>
+        <p>Seletores mais específicos:</p>
+        <ol>
+            <li>Estilo inline</li>
+            <li>IDs</li>
+            <li>Classes, atributos e pseudo-classes</li>
+            <li>Elementos e pseudo-elementos.</li>
+        </ol>
     </div>
 </body>
 </html>
