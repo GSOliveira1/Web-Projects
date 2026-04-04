@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    <title>CSS - Avançado</title>
+</head>
+<body>
+    <div id="header">
+        <h1>CSS Avançado</h1>
+    </div>
+    <div id="content" class="container">
+        <div id="posicionamento">
+            <h2>Posicionamento</h2>
+            <p>Cada elemento de nível de bloco aparece numa nova linha, fazenco com que cada item apareça um embaixo do outro, mesmo que você defina uma largura e tenha espaço para ficar um ao lado do outro, eles não ficarão.</p>
+            <p>Posicionamento relativo: move um elemento da posição que ele estaria no <strong>fluxo normal</strong>, deslocando para a parte superior, inferior, esquerda ou direita de onde ele seria posicionado.</p>
+            <p>Posicionamento absoluto: posiciona o elemento em relação a seu elemento contêiner/pai. Elementos posicionados de forma abosluta movem-se a medidade que o usuário rola a página para cima e para baixo.</p>
+            <p>Posicionamento fixo: é uma forma de posicionamento absoluto que posiciona um elemento em relação a janela do navegador. Não afetam a posição de elementos próximos e não se movem quando o usuário rola para cima e para baixo.</p>
+            <p>Para indicar onde uma caixa deve ser posicionada, você deve usar propriedades de deslocamento de caixa para informar ao navegador quanto você quer posicionar essa caixa: <strong>top, right, bottom e left</strong></p>
+            <div id="exemplo-posicionamento">
+                <h2>Exemplos de Posicionamentos</h2>
+                <h3 class="fluxo-normal">Fluxo normal</h3>
+                <p class="fluxo-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsum explicabo aperiam omnis autem alias atque exercitationem quis commodi fugit, iusto itaque illo obcaecati similique nostrum temporibus consequuntur necessitatibus. Ad.</p>
+                <h3>Posicionamento relativo</h3>
+                <p class="relativo">Este parágrafo foi movido para baixo e para a esquerda em 10px. Essa movimentação é feita com base na posição que o elemento estaria originalmente na página. Ele até está acima do &lt;hr&gt;!</p>
+                <h3>Posicionamento absoluto</h3>
+                <p class="absoluto">Este parágrafo foi movido utilizando posicionamento absoluto.</p>
+                <p>Olhe lá em cima na página. Aquele parágrafo não está sendo posicionado baseado em seu elemento contêiner <strong>(a div exemplo-posicionamento)</strong>, mas sim <strong>ao próximo elemento que tem POSICIONAMENTO DEFINIDO</strong>, neste caso o body.</p>
+                <h3>Posicionamento fixo</h3>
+                <p class="fixo">Parágrafo fixo</p>
+                <p>O parágrafo fixo vai te perseguir e não há nada que você possa fazer. Veja ele lá no canto superior direito da tela mano.</p>
+            </div>
+            <p>Podemos centralizar uma &lt;div&gt; utilizando posicionamento absoluto:</p>
+            <p>div{</p>
+            <ul class="no-style">
+                <li class="indentado">position: absolute;</li>
+                <li class="indentado">top: 50%;</li>
+                <li class="indentado">left: 50%;</li>
+                <li class="indentado">transform: translate(-50%, -50%)</li>
+            </ul>
+            <p>}</p>
+        </div>
+    </div>
+</body>
+</html>

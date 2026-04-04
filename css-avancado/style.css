@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFF8F0;
+    color: #8C5A3C;
+    font-size: 24px;
+}
+
+#header{
+    padding: 20px;
+    text-align: center;
+    background-color: #c08552;
+    color: #4B2E2B;
+}
+
+.container{
+    border-bottom: 1px solid #4B2E2B;
+}
+
+#content{
+    padding: 20px;
+}
+
+h2{
+    color: #4B2E2B;
+    margin-bottom: 15px;
+}
+
+p{
+    text-align: justify;
+}
+
+#exemplo-posicionamento>h3{
+    margin-top: 10px;
+    color: #4B2E2B;
+}
+
+.fluxo-normal{
+    position: static;
+}
+
+.relativo{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.absoluto{
+    position: absolute;
+    top: 30px;
+}
+
+.fixo{
+    position: fixed;
+    top: 5px;
+    right: 15px;
+}
+
+.no-style{
+    list-style: none;
+}
+
+.indentado{
+    text-indent: 30px;
+}
