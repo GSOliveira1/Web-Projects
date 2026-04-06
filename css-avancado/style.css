@@ -9,6 +9,10 @@ body{
     font-size: 24px;
 }
 
+div{
+    margin-bottom: 10px;
+}
+
 #header{
     padding: 20px;
     text-align: center;
@@ -65,4 +69,8 @@ p{
 
 .indentado{
     text-indent: 30px;
+}
+
+ul{
+    list-style-type: none;
 }
