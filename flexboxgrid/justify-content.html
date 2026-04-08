@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+        .alinhamento{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            padding: 5px;
+            display: flex;
+        }
+        .alinhamento div{
+            border: 1px solid red;
+            margin: 5px;
+        }
+        #flex-start{
+            justify-content: flex-start;
+        }
+        #flex-end{
+            justify-content: flex-end;
+        }
+        #center{
+            justify-content: center;
+        }
+        #space-between{
+            justify-content: space-between;
+        }
+        #space-around{
+            justify-content: space-around;
+        }
+        #space-evenly{
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <div id="flex-start" class="alinhamento">
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+    </div>
+
+    <div id="flex-end" class="alinhamento">
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+    </div>
+
+    <div id="center" class="alinhamento">
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+    </div>
+
+    <div id="space-between" class="alinhamento">
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+    </div>
+
+    <div id="space-around" class="alinhamento">
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+    </div>
+
+    <div id="space-evenly" class="alinhamento">
+        <div>DIV 1</div>
+        <div>DIV 2</div>
+        <div>DIV 3</div>
+    </div>
+</body>
+</html>
