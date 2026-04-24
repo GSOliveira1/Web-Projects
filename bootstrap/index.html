@@ -32,7 +32,7 @@
             <p>São manipulados nas medias queries, que são elementos CSS.</p>
             <p>Breakpoints do Bootstrap:</p>
             <table class="table table-info table-hover">
-                <thead class="">
+                <thead>
                     <tr>
                         <th>Breakpoint</th>
                         <th>Class Infix</th>
@@ -105,7 +105,7 @@
 
         <div class="border-bottom border-primary-subtle mb-3">
             <h2>Margin e Padding</h2>
-            <p>Margin:</p>
+            <h3>Margin</h3>
             <ul>
                 <li>mt -> margin top</li>
                 <li>mb -> margin bottom</li>
@@ -116,7 +116,7 @@
                 <li>m -> margin em todos os lados</li>
                 <li>valor -> 1 a 5</li>
             </ul>
-            <p>Padding:</p>
+            <h3>Padding</h3>
             <ul>
                 <li>pt -> padding top</li>
                 <li>pb -> padding bottom</li>
@@ -131,7 +131,7 @@
 
         <div class="border-bottom border-primary-subtle mb-3">
             <h2>Tamanhos e Bordas</h2>
-            <p>Classes de Largura</p>
+            <h3>Classes de Largura</h3>
             <ul>
                 <li>class="w-25" = width: 25%</li>
                 <li>class="w-50" = width: 50%</li>
@@ -139,7 +139,7 @@
                 <li>class="w-100" = width: 100%</li>
                 <li>class="w-auto" = largura automática, preenche todo o espaço disponível</li>
             </ul>
-            <p>Classes de Altura</p>
+            <h3>Classes de Altura</h3>
             <ul>
                 <li>class="h-25" = height: 25%</li>
                 <li>class="h-50" = height: 50%</li>
@@ -147,7 +147,7 @@
                 <li>class="h-100" = height: 100%</li>
                 <li>class="h-auto" = altura de acordo com o conteúdo</li>
             </ul>
-            <p>Bordas</p>
+            <h3>Bordas</h3>
             <ul>
                 <li>border: todas as bordas</li>
                 <li>border-top: borda superior</li>
@@ -202,6 +202,108 @@
                 <button type="button" class="btn btn-secondary btn-sm">Small button</button>
             </div>
         </div>
+
+        <div class="border-bottom border-primary-subtle mb-3">
+            <h2>Barras de Navegação</h2>
+
+            <h3>Informações importantes sobre navbars</h3>
+            <p>A navbar e seus conteúdos são fluidos por padrão. É preciso mudar o container caso queira modificar a largura da navbar.</p>
+            <p>Utilize a tag &lt;nav&gt; para garantir acessibilidade em seu site.</p>
+            <p>As navbars são responsivas por padrão.</p>
+            <p>Indica o item (página) atual utilizando <strong>aria-current: "page"</strong>.</p>
+            <p>As navbars vem com uma varidade de componentes que o bootstrap oferece:</p>
+            <ul>
+                <li>.navbar-brand: utilizado para colocar logo/nome. Funciona melhor em elementos &lt;a&gt;</li>
+                <li>.navbar-nav: para navegação com altura máxima e leve.</li>
+                <li>.navbar-toggle: utilizado com o plugin de collapse.</li>
+                <li>.active: utilize para indicar a página atual.</li>
+                <li>Flex e spacing</li>
+            </ul>
+            <h3>Barra de Navegação Simples</h3>
+            <ul class="nav mb-2 bg-light">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+            </ul>
+
+            <h3>Bara de Navegação Aprimorada</h3>
+            <nav class="navbar navbar-expand bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <ul class="navbar-nav collapse navbar-collapse">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <h3>Barra de Navegação Responsiva</h3>
+            <div class="navbar navbar-expand-lg bg-light">
+                <a class="navbar-brand" href="">
+                    <img src="mercado-livre-logo.png" alt="Logo" width="100">
+                </a>
+                <!-- Menu Hamburguer, para ficar responsivo: -->
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-target">
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
+                <div class="collapse navbar-collapse" id="nav-target"> <!-- Quando chega no tamanho LG, a navegação irá sumir-->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ps-3"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item ps-3"><a class="nav-link" href="">Features</a></li>
+                        <li class="nav-item ps-3"><a class="nav-link" href="">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Barra de Navegação Completa Responsiva (Dropdown e Search Bar)</h3>
+            <div class="navbar navbar-expand-lg bg-light">
+                <a class="navbar-brand" href="#">
+                    <img src="mercado-livre-logo.png" alt="Logo" width="100">
+                </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#responsive-nav-target">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="responsive-nav-target">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action 1</a></li>
+                                <li><a class="dropdown-item" href="#">Action 2</a></li>
+                                <li><a class="dropdown-item" href="#">Action 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex me-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
