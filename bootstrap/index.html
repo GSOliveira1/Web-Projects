@@ -8,26 +8,29 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container bg-info-subtle bg-gradient text-primary">
-        <div class="text-center border-bottom border-primary mb-3">
+    <div class="container bg-dark bg-gradient text-light">
+        <div class="text-center border-bottom border-light mb-3">
             <h1>Bootstrap</h1>
-            <p><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Bootstrap Documentation</a></p>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-light" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Bootstrap Documentation</a></li>
+                <li class="nav-item"><a class="nav-link text-light" href="https://icons.getbootstrap.com/" target="_blank">Icons</a></li>
+            </ul>
         </div>
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Introdução</h2>
             <p>O Bootstrap segue uma lógica Mobile First: no design responsivo, começa desenvolvendo para dispositivos menores e depois para dispositivos maiores.</p>
             <p>Design responsivo: o design da página responde ao tamanho do dispoitivo em que ele está sendo visto (celular, tablet, notebook, TV).</p>
             <p>O Bootstrap possui inúmeros designs prontos, e é muito utilizado nos dias atuais, mesmo que haja outras tecnologias fortes no mercado.</p>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Globais Importantes</h2>
             <p>O Bootstrap precisa que o arquivo seja HTML5. Sem isso, os estilos não funcionam corretamente.</p>
             <p>É preciso definir uma viewport meta tag.</p>
             <p>Box sizing: o box sizing é definido como border box. Isso garante que o padding não afete a largura final computada de um elemento.</p>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Breakpoints</h2>
             <p>Breakpoints, ou pontos de quebra, são larguras costumizáveis que determinam como o layout responsivo da sua página web irá comportar em diversos dispositivos. </p>
             <p>São manipulados nas medias queries, que são elementos CSS.</p>
@@ -76,18 +79,18 @@
             <p>Você pode definir seus próprios breakpoints customizáveis através das media queries.</p>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Containers</h2>
             <p>Os containers são o elemento mais básico no Bootstrap e são necessários quando for utilizar o sistema padrão de Grid e Flexbox.</p>
             <p>Bootstrap possui três tipos de containers:</p>
             <ul>
                 <li>container: responsiva, com largura fixada, onde a largura máximo do container muda a cada breakpoint.</li>
-                <li>container-breakpoint: width = 100% até que a largura especificada seja atingida.</li>
+                <li>container-breakpoint: quando ele atinge o breakpoint específico, a width muda para 100%, ocupando todo o espaço disponível.</li>
                 <li>container-fluid: width = 100% em todos os breakpoints.</li>
             </ul>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Posicionamentos</h2>
             <p>Elementos Flutuantes:</p>
             <ul>
@@ -104,7 +107,7 @@
             </ul>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Margin e Padding</h2>
             <h3>Margin</h3>
             <ul>
@@ -130,7 +133,7 @@
             </ul>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Tamanhos e Bordas</h2>
             <h3>Classes de Largura</h3>
             <ul>
@@ -160,7 +163,7 @@
             </ul>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Botões</h2>
             <button type="button" class="btn">Botão</button>
             <p>A classe <em>btn</em> é para ser usada em conjunto com outras variantes de botões, ou para servir como base para estilos próprios de botões.</p>
@@ -204,7 +207,7 @@
             </div>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Barras de Navegação</h2>
 
             <h3>Informações importantes sobre navbars</h3>
@@ -305,7 +308,7 @@
             </div>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Listas</h2>
             <ul class="list-group mb-1">
                 <li class="list-group-item active">Item 1</li>
@@ -371,7 +374,7 @@
             </div>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Formulários</h2>
             <p>Em formulários, é importante utilizar o atributo <strong>type</strong> corretamente, para conseguir usufruir de novas vantagens do bootstrap, como verificação de email, seleção de número, etc.</p>
             <form class="mb-3">
@@ -426,7 +429,7 @@
             </form>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Input Group</h2>
             <p>Serve para agrupar elementos de input. Utiliza as classes <em>.input-group</em> e <em>.input-group-text</em>.</p>
             <div class="input-group">
@@ -441,7 +444,7 @@
             </div>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Alertas</h2>
             <p>A principal classe para criar alertas é a <em>.alert</em>. Ela possui as variantes primary, secondary, e as outras também.</p>
             <div class="alert mb-2 border border-dark">
@@ -458,7 +461,7 @@
             <p>Adicionando <em>data-bs-dismiss="alert"</em> no elemento do botão de fechar, ao clicar no X o alerta irá sumir. Além disso, com a classe <em>alert-dismissible</em> você posiciona o botão de fechar na direita. Com as classes <em>fade</em> e <em>show</em>, você adiciona uma pequena animação ao clicar no botão de fechar.</p>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Tabelas</h2>
             <p>O bootstrap utiliza uma classe padrão <em>.table</em> nas tabelas, e oferece classes modificadoras opcionais para personalizar essas tabelas.</p>
             <table class="table table-responsive table-dark table-hover">
@@ -499,7 +502,7 @@
             </ul>
         </div>
 
-        <div class="border-bottom border-primary-subtle mb-3">
+        <div class="border-bottom border-light mb-3">
             <h2>Paginação</h2>
             <p>O bootstrap utiliza links para fazer paginação no site. Paginação é feita utilizando listas para que leitores de tela possam anunciar o número de links disponíveis. Utilize um &lt;nav&gt;.</p>
             <p>Como a maioria das páginas possuem mais que uma navegação, é recomendado adicionar uma <em>aria-label</em> ao &lt;nav&gt; da paginação para refletir o seu propósito.</p>
@@ -519,6 +522,60 @@
                 <li>.pagination-lg e pagination-sm: para modificar o tamanho</li>
                 <li>Podemos modificar o posicionamento utilizando <em>justify-content-center</em> ou <em>justify-content-end</em></li>
             </ul>
+        </div>
+
+        <div class="border-bottom border-light mb-3">
+            <h2>Cards</h2>
+            <p>Um card é um container flexível, contendo opções para header, footer, diferentes conteúdos, backgrounds e opções de display. Eles são construídos utilizando flexbox, oferecendo fácil alinhamento e mistura com outros elementos do Bootstrap. </p>
+            <p>Para criar um card, utilizamos a classe <em>.card</em> em uma div.</p>
+            <p>Utilizamos a classe <em>.card-body</em> quando queremos um conteúdo com padding dentro do card.</p>
+            <p>Títulos de card podem ser adicionados utilizando a classe <em>.card-title</em>. Sub-títulos são adicionais utilizando a classe <em>.card-subtitle</em> Textos podem ser adicionais utilizando a classe <em>.card-text</em>.</p>
+            <p><em>.card-img-top</em> e <em>.card-img-bottom</em> arredondam as bordas superior e inferior da imagem respectivamente para ficarem de acordo com a margem do card.</p>
+            <p>Cards não assumem nenhuma largura para iniciar, então o padrão é width = 100%.</p>
+            <div class="card mb-3" style="width: 300px;">
+                <img src="img_avatar2.png" class="card-img-top" alt="..." height="200px">
+                <div class="card-body">
+                    <h5 class="card-title">Card</h5>
+                    <p class="card-text">Exemplo de um card simples com título e botão (link).</p>
+                    <a href="" class="btn btn-primary">Clique aqui</a>
+                </div>
+            </div>
+            <p>É possível utilizar cards em grid layout:</p>
+            <div class="row mb-3">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Coluna 1</h5>
+                        <p class="card-text">Texto dentro do card da coluna 1.</p>
+                        <a href="#" class="btn btn-primary">Não sei</a>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Coluna 2</h5>
+                        <p class="card-text">Texto dentro do card da coluna 2.</p>
+                        <a href="#" class="btn btn-primary">Sei lá</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <p>Utilizando uma combinação de grid e classes de utilidade, cards podem ter seus conteúdos posicionados horizontalmente.</p>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                    <img src="img_avatar2.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
